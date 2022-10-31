@@ -1,0 +1,348 @@
+@font-face {
+  font-family: "Playfair Display";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/playfairdisplay/v30/nuFRD-vYSZviVYUb_rj3ij__anPXDTnCjmHKM4nYO7KN_qiTXtHA-Q.woff2)
+    format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400, 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v25/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtr6Hw5aXo.woff2)
+    format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat";
+  font-size: 3vh;
+}
+
+h1,
+h2 {
+  font-family: "Playfair Display";
+  font-size: 5vh;
+}
+
+h1 {
+  font-size: 7vh;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+header img {
+  max-width: 100px;
+  height: auto;
+}
+
+header ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+header ul li {
+  list-style: none;
+}
+
+header ul li a {
+  text-decoration: none;
+  padding: 0 30px;
+  color: black;
+}
+
+header ul li button {
+  background-color: transparent;
+  cursor: pointer;
+  padding: 2px;
+  border: 1px solid black;
+  font-weight: 800;
+}
+
+header ul li button:hover {
+  background-color: black;
+  color: #f4b454;
+  border: none;
+  transition: background-color 1s;
+}
+
+@media only screen and (max-width: 700px) {
+  header {
+    flex-direction: column;
+  }
+  header ul {
+    flex-direction: column;
+  }
+  header ul li {
+    margin: 10px 0;
+  }
+}
+
+main #hero {
+  background-image: url("../images/hero-background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  color: #f4b454;
+}
+
+main #hero-text {
+  background-color: rgb(4, 4, 4);
+  padding: 20px;
+  opacity: 0.9;
+}
+
+main #hero-text h2 {
+  background-color: #f4b454;
+  color: black;
+  position: relative;
+  left: 50px;
+  padding: 20px;
+  margin-top: 10px;
+  font-family: "Montserrat";
+}
+
+@media only screen and (max-width: 750px) {
+  main #hero-text h2 {
+    position: static;
+  }
+}
+
+main #support-section {
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px double;
+}
+
+main #support-section h2 {
+  margin-bottom: 10px;
+}
+
+main #how-it-works {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  min-height: 250px;
+  padding: 30px 0;
+  background-color: rgb(57, 49, 49);
+  color: aliceblue;
+}
+
+main .hiw-icon1 {
+  background-color: #f4b454;
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  color: rgb(194, 86, 59);
+  font-size: 50px;
+}
+
+main .hiw-icon1 p {
+  font-size: 6vh;
+}
+
+main .hiw-icon2 {
+  background-color: rgb(194, 86, 59);
+  color: black;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  position: relative;
+  left: 70%;
+  bottom: 90%;
+}
+
+main #hiw-container {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+main #hiw-container div {
+  text-align: justify;
+  max-width: 250px;
+  padding: 20px;
+}
+
+main #hiw-container h3 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+main #hiw-container button {
+  margin-left: 28%;
+  margin-top: 20px;
+  background-color: transparent;
+  color: #f4b454;
+  padding: 5px;
+  cursor: pointer;
+  font-weight: 800;
+}
+
+main #hiw-container button:hover {
+  background-color: #f4b454;
+  color: black;
+  border: 2px solid #f4b454;
+  transition: background-color 1s;
+}
+
+main #why {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  min-height: 300px;
+  margin-top: 50px;
+}
+
+main #why h3 {
+  margin: 20px;
+}
+
+main #why button {
+  background-color: transparent;
+  margin-bottom: 20px;
+  padding: 5px;
+  cursor: pointer;
+  font-weight: 800;
+}
+
+main #why button:hover {
+  background-color: black;
+  color: #f4b454;
+  transition: background-color 1s;
+}
+
+main #why #reasons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+main #why #reasons div {
+  max-width: 180px;
+  margin: 30px;
+}
+
+main #news {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  min-height: 200px;
+  text-align: center;
+  padding: 30px;
+  background-color: rgb(135, 133, 133);
+}
+
+main #news input {
+  padding: 5px;
+}
+
+main #news button {
+  background-color: #f4b454;
+  margin-bottom: 20px;
+  padding: 5px;
+  cursor: pointer;
+  font-weight: 800;
+}
+
+main #news button:hover {
+  background-color: black;
+  color: #f4b454;
+  border: 2px solid black;
+  transition: background-color 1s;
+}
+
+footer {
+  background-color: rgb(45, 45, 51);
+  color: aliceblue;
+}
+
+footer h2 {
+  margin-bottom: 20px;
+  color: #f4b454;
+}
+
+footer #footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 100px;
+  width: 100%;
+  justify-content: space-around;
+  align-items: baseline;
+  padding: 0px;
+}
+
+footer div {
+  padding: 30px;
+}
+
+footer #logo-text img {
+  max-width: 150px;
+  background-color: aliceblue;
+  border-radius: 50%;
+}
+
+footer #logo-text {
+  text-align: center;
+  align-self: center;
+}
+
+footer #footer-links {
+  display: flex;
+  justify-content: flex-start;
+  padding: 0;
+  color: whitesmoke;
+}
+
+footer #footer-links :first-child {
+  margin-right: 10px;
+}
+
+footer #footer-container li {
+  list-style: none;
+  padding: 10px 10px 20px 0;
+}
+
+footer #footer-links a {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+@media only screen and (max-width: 801px) {
+  footer #footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
